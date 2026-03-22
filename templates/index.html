@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nosso Enxoval💍</title>
+    <link rel="stylesheet"
+href="{{ url_for('static',filename='style.css') }}">   
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1 class="fade">Rodrigo & Isabella 💕</h1>
+
+        <img src="{{ url_for('static',filename='casal.png') }}" class="foto fade">
+            
+        <p class="fade">Estamos contando os dias para começar nossa nova vida juntos 🙏</p>
+
+    <div class="countdown-container">
+            <div class="time-box">
+                <span id="days">0</span>
+                <p>Dias</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">0</span>
+                <p>Hrs</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <p>Min</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">0</span>
+                <p>Seg</p>
+            </div>
+
+        <div id="contador" class="fade"></div>
+
+        <a
+href="https://docs.google.com/spreadsheets/d/1qbrvOwZYnWp6A20CfJDgW9DgOcL0EpQgYfuDuarURYs/edit?usp=sharing" target="_blank" class="botao fade">Ver nossa lista de presentes 🎁 </a>
+    </div>
+
+<script src="{{ url_for('static', filename='script.js') }}"
+></script>
+    
+</body>
+</html>
