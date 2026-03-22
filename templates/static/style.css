@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: url("casal.jpg") no-repeat center center/cover;
+    background: url("static/casal.jpg") no-repeat center center/cover;
     height: 100vh;
     color: white;
 }
