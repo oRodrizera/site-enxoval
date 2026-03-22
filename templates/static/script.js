@@ -14,3 +14,11 @@
  }
 
  setInterval(atualizarContador, 1000);
+
+ function copiarPix() {
+   const chave = document.getElementById("chavePix").innerText;
+
+   navigator.clipboard.writeText(chave);
+
+   document.getElementById("mensagemCopiado").innerText = "Nós te agradecemos ❤️";
+ }
