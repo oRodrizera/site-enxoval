@@ -18,7 +18,10 @@
  function copiarPix() {
    const chave = document.getElementById("chavePix").innerText;
 
-   navigator.clipboard.writeText(chave);
-
-   document.getElementById("mensagemCopiado").innerText = "Nós te agradecemos ❤️";
- }
+   navigator.clipboard.writeText(chave).then(() => {
+      document.getElementById("mensagemCopiado").innerText = "Nós te agradecemos ❤️";
+ })
+ .catch(() => {
+   alert("Não foi possível copiar. Copie manualmente 😊");
+ })
+}
