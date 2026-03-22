@@ -98,12 +98,25 @@ p {
 }
 
 .pix-chave {
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.mensagem {
-    margin-top: 10px;
-    color: lightgreen;
-    font-weight: bold;
+@media (max-width: 768px) {
+    .historia {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .historia h2 {
+        font-size: 26px;
+    }
+
+    .historia p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
 }
